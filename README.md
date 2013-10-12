@@ -1,13 +1,12 @@
 # async-examples
 
-A Clojure library designed to ... well, that part is up to you.
+Some simple examples to show how core.async works
 
 ## Usage
 
-FIXME
+You shouldn't use this.
 
 ## License
 
-Copyright © 2013 FIXME
+Just don't sue me when things don't work.
 
-Distributed under the Eclipse Public License, the same as Clojure.
