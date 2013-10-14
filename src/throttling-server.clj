@@ -38,10 +38,9 @@
       (handle connection)))))
 
 (thread
-  (doseq [i (range 4)]
+  (doseq [i (range 1e4)] ;; go blocks are cheap, lets make a bunch!
     (go
       (while true
-        (println "running ... " i)
         (let [[message result-chan] (<! queue)]
           (println (str "Go block " i " serving: " message ))
           (alts! [(timeout 5000)])   ;;fake a long process by parking go block
