@@ -12,6 +12,8 @@ func main() {
 
 	mychan = make(chan string, 0)
 
+	//close( mychan )
+
 	go func () {
 		mychan <- "Hello World\n\n"
 	}()

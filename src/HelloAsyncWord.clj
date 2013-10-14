@@ -4,6 +4,8 @@
 
 (def mychan (chan 0))
 
+;; (close! mychan)
+
 (go
   (>! mychan "Hello World" ))
 
